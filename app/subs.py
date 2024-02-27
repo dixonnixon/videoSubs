@@ -5,7 +5,7 @@ import base64
 # from playwright.sync_api import sync_playwright
 from pathlib import Path
 # import webvtt
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 
 from moviepy.editor import *
 import speech_recognition as sr
@@ -16,7 +16,7 @@ import json
 from ClientFactory import ClientFactory
 from client_utils import get_client, create_vimeo_client
 
-# load_dotenv()
+load_dotenv()
 
 api_client_config = {
    "vimeo": {

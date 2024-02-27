@@ -22,11 +22,11 @@ class ClientFactory:
   
   def create(self, resource, config):
       # Create a new client based on resource and config
-      client = self.create_client(resource, config) 
+      client = self._create_client(resource, config) 
       self._clients[resource] = client
       return client
 
-  def create_client(self, resource, config):
+  def _create_client(self, resource, config):
     """
     Returns an API client for the given resource using the registered creator.
     """

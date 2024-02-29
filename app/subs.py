@@ -61,12 +61,12 @@ def with_token(token: str):
           req = requests.get(f"https://api.vimeo.com/videos/{video_id}",
             headers = headers
           )
-          
+          res = req.json()
         except requests.exceptions.RequestException as e:
           print(e)
           print(res)
           return None
-        res = req.json()
+        
         print(req.status_code)
         # Use token to access data from url
         pass

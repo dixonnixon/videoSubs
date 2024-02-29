@@ -1,6 +1,6 @@
 import unittest
 
-import mock
+# import mock
 from unittest.mock import patch  # For mocking external dependencies
 from app.client_utils import create_vimeo_client , get_client
 from app.ClientFactory import ClientFactory
